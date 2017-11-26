@@ -1,0 +1,44 @@
+// I know this is a bit over kill for this exercise but I wanted to display my understanding of SCSS variables.
+
+$brand-blue: #3686D2;
+$font-color: #FFF;
+$font-family: avenir;
+
+
+body{
+  background-color:$brand-blue;
+}
+
+.content {
+  color: $font-color;
+  font-family:$font-family;
+  margin: 0 auto;
+  width: 900px;
+}
+
+fieldset {
+  border: none;
+}
+
+h1 {
+  color: $font-color;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+header {
+  h1 {
+    text-align: center;
+  }
+}
+
+main {
+  
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
