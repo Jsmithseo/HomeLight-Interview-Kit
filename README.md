@@ -1,1 +1,0 @@
-# HomeLight-Interview-Kit
