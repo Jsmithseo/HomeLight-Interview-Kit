@@ -1,3 +1,5 @@
+
+
 <%
 =begin %>
 <%- @agents.each do |agent| %>
@@ -40,21 +42,20 @@
 =end %>
 
 <%- @agents.each do |agent| %>
-<div class="topper">
+
   <h1>Agents</h1>
 </div>
 <div class="container">
     <div class="photo">
-      <img src="http://static4.businessinsider.com/image/52c9702c6bb3f751704f26dd/according-to-science-these-are-the-best-photos-to-use-in-your-dating-profile.jpg" />
+      
+      <img src="https://randomuser.me/api/portraits/men/15.jpg" id="large_img">
       <div class="name"><%= agent.name %></div>
       <div class="brokerage"><%= agent.brokerage %></div>
     </div>
     <div class="personal">
      <b>Side:</b> 
-     <ul>
-        <li>Buyers: (<%= agent.agent_stat.buyers %>)</li>
-        <li>Sellers: (<%= agent.agent_stat.sellers %>)</li>
-    </ul>
+        <div class="buyers"> Buyers: (<%= agent.agent_stat.buyers %>)</div>
+        <div class="sellers">Sellers: (<%= agent.agent_stat.sellers %>)</div>
     </div>
     <div class="deal">
       <h3>Latest Deal</h3>
@@ -87,5 +88,9 @@
       </div>
     </div>
     </div>
+
+
+
+    
 </div>
 <% end %>

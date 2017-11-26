@@ -1,19 +1,45 @@
 // I know this is a bit over kill for this exercise but I wanted to display my understanding of SCSS variables.
 
-$brand-blue: #3686D2;
-$font-color: #FFF;
+$brand-primary: #3686D2;
+$brand-secondary: #B6E1F5;
+$font-color: #fff;
 $font-family: avenir;
-
-
-body{
-  background-color:$brand-blue;
-}
 
 .content {
   color: $font-color;
   font-family:$font-family;
-  margin: 0 auto;
-  width: 900px;
+  max-width: 1000px;
+  position: relative;
+  float: left;
+  margin-left: -100px;
+
+}
+
+.wrapper {
+  background: rgba(25, 52, 93, 0.9);
+  height:auto;
+
+  img {
+  width:60%;
+
+  }
+}
+
+
+.clear-fix {
+  clear:both;
+}
+.grid {
+  display: box;
+  width:500px;
+  height:100%;
+  box-orient: vertical;
+  float:right;
+}
+.row {
+  padding: 20px;
+  box-flex:1;
+
 }
 
 fieldset {
@@ -22,10 +48,11 @@ fieldset {
 
 h1 {
   color: $font-color;
+
 }
 
 h3 {
-  text-decoration: underline;
+  font-size: 30px;
 }
 
 header {
@@ -34,11 +61,24 @@ header {
   }
 }
 
-main {
-  
+label {
+
+  font-size: 18px;
+}
+
+input[type="submit"] {
+    background: $brand-primary;
+    border: 1px $brand-primary solid;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    line-height: 1.556;
+    padding: 7px 0;
+
 }
 
 footer {
   text-align: center;
   width: 100%;
 }
+

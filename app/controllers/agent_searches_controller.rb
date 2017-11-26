@@ -22,3 +22,7 @@ class AgentSearchesController < ApplicationController
   end
 
 end
+
+def home
+    @Presents = Present.all.reverse.take(20)
+end
